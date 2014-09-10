@@ -1,7 +1,9 @@
 #pragma once
 #include <GL/glut.h>
 #include <math.h>
+#include <sstream>
 #include "Vector2.h"
+#include "Debug.h"
 class Screen
 {
 public:
@@ -11,5 +13,6 @@ public:
 
 	static Vector2 PixelToScreenSpace(Vector2 position);
 	static void RenderGrid();
+	static void RenderGridPoint(Vector2 point);
 };
 

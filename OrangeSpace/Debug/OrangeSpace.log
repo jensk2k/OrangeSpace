@@ -1,75 +1,22 @@
-﻿Build started 08-09-2014 19:00:43.
+﻿Build started 10-09-2014 03:00:18.
      1>Project "D:\OrangeSpace\OrangeSpace\OrangeSpace.vcxproj" on node 2 (Build target(s)).
      1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(388,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (Asteroids.vcxproj).  This can lead to incorrect clean and rebuild behavior.
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Background.cpp Component.cpp Debug.cpp Game.cpp GameObject.cpp MediumStar.cpp Random.cpp BigStar.cpp SmallStar.cpp TextureLoader.cpp main.cpp Screen.cpp Spaceship.cpp TGALoader.cpp Vector2.cpp
-         Vector2.cpp
-     1>d:\orangespace\orangespace\vector2.h(161): warning C4244: 'return' : conversion from 'double' to 'float', possible loss of data
-     1>d:\orangespace\orangespace\vector2.h(165): warning C4244: 'return' : conversion from 'double' to 'float', possible loss of data
-         TGALoader.cpp
-     1>d:\orangespace\orangespace\vector2.h(161): warning C4244: 'return' : conversion from 'double' to 'float', possible loss of data
-     1>d:\orangespace\orangespace\vector2.h(165): warning C4244: 'return' : conversion from 'double' to 'float', possible loss of data
-     1>d:\orangespace\orangespace\tgaloader.cpp(22): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\stdio.h(211) : see declaration of 'fopen'
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Spaceship.cpp
          Spaceship.cpp
-     1>d:\orangespace\orangespace\vector2.h(161): warning C4244: 'return' : conversion from 'double' to 'float', possible loss of data
-     1>d:\orangespace\orangespace\vector2.h(165): warning C4244: 'return' : conversion from 'double' to 'float', possible loss of data
-         Screen.cpp
-     1>d:\orangespace\orangespace\vector2.h(161): warning C4244: 'return' : conversion from 'double' to 'float', possible loss of data
-     1>d:\orangespace\orangespace\vector2.h(165): warning C4244: 'return' : conversion from 'double' to 'float', possible loss of data
-     1>d:\orangespace\orangespace\screen.cpp(5): warning C4244: 'initializing' : conversion from 'int' to 'float', possible loss of data
-         main.cpp
-     1>d:\orangespace\orangespace\vector2.h(161): warning C4244: 'return' : conversion from 'double' to 'float', possible loss of data
-     1>d:\orangespace\orangespace\vector2.h(165): warning C4244: 'return' : conversion from 'double' to 'float', possible loss of data
-     1>d:\orangespace\orangespace\main.cpp(30): warning C4305: 'argument' : truncation from 'double' to 'GLclampf'
-     1>d:\orangespace\orangespace\main.cpp(131): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
-     1>d:\orangespace\orangespace\main.cpp(132): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
-     1>d:\orangespace\orangespace\main.cpp(136): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
-     1>d:\orangespace\orangespace\main.cpp(137): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
-     1>d:\orangespace\orangespace\main.cpp(173): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
-     1>d:\orangespace\orangespace\main.cpp(184): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
-         TextureLoader.cpp
-     1>d:\orangespace\orangespace\vector2.h(161): warning C4244: 'return' : conversion from 'double' to 'float', possible loss of data
-     1>d:\orangespace\orangespace\vector2.h(165): warning C4244: 'return' : conversion from 'double' to 'float', possible loss of data
-         SmallStar.cpp
-     1>d:\orangespace\orangespace\vector2.h(161): warning C4244: 'return' : conversion from 'double' to 'float', possible loss of data
-     1>d:\orangespace\orangespace\vector2.h(165): warning C4244: 'return' : conversion from 'double' to 'float', possible loss of data
-         BigStar.cpp
-     1>d:\orangespace\orangespace\vector2.h(161): warning C4244: 'return' : conversion from 'double' to 'float', possible loss of data
-     1>d:\orangespace\orangespace\vector2.h(165): warning C4244: 'return' : conversion from 'double' to 'float', possible loss of data
-         Random.cpp
-     1>d:\orangespace\orangespace\random.cpp(5): warning C4244: 'argument' : conversion from 'time_t' to 'unsigned int', possible loss of data
-         MediumStar.cpp
-     1>d:\orangespace\orangespace\vector2.h(161): warning C4244: 'return' : conversion from 'double' to 'float', possible loss of data
-     1>d:\orangespace\orangespace\vector2.h(165): warning C4244: 'return' : conversion from 'double' to 'float', possible loss of data
-         GameObject.cpp
-     1>d:\orangespace\orangespace\vector2.h(161): warning C4244: 'return' : conversion from 'double' to 'float', possible loss of data
-     1>d:\orangespace\orangespace\vector2.h(165): warning C4244: 'return' : conversion from 'double' to 'float', possible loss of data
-         Game.cpp
-     1>d:\orangespace\orangespace\vector2.h(161): warning C4244: 'return' : conversion from 'double' to 'float', possible loss of data
-     1>d:\orangespace\orangespace\vector2.h(165): warning C4244: 'return' : conversion from 'double' to 'float', possible loss of data
-     1>d:\orangespace\orangespace\game.cpp(28): warning C4018: '<' : signed/unsigned mismatch
-     1>d:\orangespace\orangespace\game.cpp(37): warning C4018: '<' : signed/unsigned mismatch
-     1>d:\orangespace\orangespace\game.cpp(47): warning C4018: '<' : signed/unsigned mismatch
-         Debug.cpp
-     1>d:\orangespace\orangespace\vector2.h(161): warning C4244: 'return' : conversion from 'double' to 'float', possible loss of data
-     1>d:\orangespace\orangespace\vector2.h(165): warning C4244: 'return' : conversion from 'double' to 'float', possible loss of data
-     1>d:\orangespace\orangespace\debug.cpp(27): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>d:\orangespace\orangespace\debug.cpp(29): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
-         Component.cpp
-         Background.cpp
-     1>d:\orangespace\orangespace\vector2.h(161): warning C4244: 'return' : conversion from 'double' to 'float', possible loss of data
-     1>d:\orangespace\orangespace\vector2.h(165): warning C4244: 'return' : conversion from 'double' to 'float', possible loss of data
-         Generating Code...
+     1>d:\orangespace\orangespace\vector2.h(172): warning C4244: 'return' : conversion from 'double' to 'float', possible loss of data
+     1>d:\orangespace\orangespace\vector2.h(176): warning C4244: 'return' : conversion from 'double' to 'float', possible loss of data
        Link:
          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\OrangeSpace\OrangeSpace\Debug\OrangeSpace.exe" /INCREMENTAL /NOLOGO opengl32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\OrangeSpace\OrangeSpace\Debug\OrangeSpace.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\OrangeSpace\OrangeSpace\Debug\OrangeSpace.lib" /MACHINE:X86 Debug\Background.obj
          Debug\Component.obj
          Debug\Debug.obj
          Debug\Game.obj
          Debug\GameObject.obj
+         Debug\Input.obj
          Debug\MediumStar.obj
          Debug\Random.obj
          Debug\BigStar.obj
+         Debug\Rigidbody.obj
          Debug\SmallStar.obj
          Debug\TextureLoader.obj
          Debug\main.obj
@@ -82,4 +29,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:05.59
+Time Elapsed 00:00:00.61

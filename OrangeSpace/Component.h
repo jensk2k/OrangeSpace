@@ -4,6 +4,8 @@ class Component
 public:
 	Component();
 	~Component();
-	float rotation;
+
+	virtual void FixedUpdate();
+	virtual void FrameUpdate();
 };
 

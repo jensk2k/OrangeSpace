@@ -11,9 +11,9 @@
 #include "Debug.h"
 #include "Game.h"
 #include "Screen.h"
-
+#include "Input.h"
 // Global variables
-std::string title = "Asteroids";  // Windowed mode's title
+std::string title = "Orange Space";  // Windowed mode's title
 
 int refreshMillis = 30;      // Refresh period in milliseconds
 
@@ -110,15 +110,6 @@ void timer(int value) {
 	glutTimerFunc(refreshMillis, timer, 0); // subsequent timer call at milliseconds
 }
 
-/* Callback handler for normal-key event */
-void keyboard(unsigned char key, int x, int y) {
-	switch (key) {
-	case 27:     // ESC key
-		exit(0);
-		break;
-	}
-}
-
 /* Callback handler for special-key event */
 void specialKeys(int key, int x, int y) 
 {
@@ -170,6 +161,10 @@ void mouse(int button, int state, int x, int y)
 
 void mouseMotion(int x, int y)
 {
+	/*std::stringstream ss;
+	ss << "mouse: " << x << ", " << y << std::endl;
+	Debug::Log(ss.str());*/
+
 	Game::cursorPosition.Set(x, y);
 }
 
@@ -191,7 +186,8 @@ int main(int argc, char** argv)
 	glutReshapeFunc(reshape);     // Register callback handler for window re-shape
 	glutTimerFunc(0, timer, 0);   // First timer call immediately
 	glutSpecialFunc(specialKeys); // Register callback handler for special-key event
-	glutKeyboardFunc(keyboard);   // Register callback handler for special-key event
+	glutKeyboardFunc(Input::keyboardDownFunc);   // Register callback handler for special-key event
+	glutKeyboardUpFunc(Input::keyboardUpFunc);
 	//glutFullScreen();             // Put into full screen
 	glutMouseFunc(mouse);   // Register callback handler for mouse event
 	glutPassiveMotionFunc(mouseMotion);

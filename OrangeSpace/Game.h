@@ -13,6 +13,8 @@ public:
 	static Texture * spaceshipTexture;
 	static Texture * mediumStarTexture;
 	static Texture * bigStarTexture;
+	static float time;
+	static float deltaTime;
 	static void Init();
 	static void FrameUpdate();
 	static void FixedUpdate();

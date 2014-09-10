@@ -1,12 +1,11 @@
 #include "Component.h"
 
 
-Component::Component()
-{
-	rotation = 0.0f;
-}
+Component::Component(){}
 
 
-Component::~Component()
-{
-}
+Component::~Component(){}
+
+void Component::FixedUpdate() {}
+
+void Component::FrameUpdate() {}

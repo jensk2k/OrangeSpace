@@ -120,9 +120,20 @@ public:
 		return ((x != v.x) || (y != v.y));
 	}
 
-	Vector2& Normalize(void)
+	/*Vector2& Normalize(void)
 	{
 		return (*this /= sqrtf(x * x + y * y));
+	}*/
+
+	void Normalize()
+	{
+		float length = (sqrtf(this->x * this->x + this->y * this->y));
+
+		if (length > 0.f)
+		{
+			this->x = this->x / length;
+			this->y = this->y / length;
+		}
 	}
 
 	Vector2& Rotate(float angle);

@@ -7,6 +7,8 @@ Texture * Game::mediumStarTexture = new Texture();
 Texture * Game::bigStarTexture = new Texture();
 Spaceship spaceship;
 Background background;
+float Game::time = .0f;
+float Game::deltaTime = .0f;
 
 void Game::Init()
 {
@@ -42,7 +44,16 @@ void Game::FixedUpdate()
 
 void Game::Render()
 {
+	// Update
+	Game::deltaTime = (glutGet(GLUT_ELAPSED_TIME) / 1000.f) - Game::time;
+	Game::time = time = glutGet(GLUT_ELAPSED_TIME) / 1000.f;
+
+	//std::stringstream ss;
+	//ss << "Delta time: " << Game::deltaTime << std::endl;
+	//Debug::Log(ss.str());
+
 	background.Render();
+
 
 	for (int i = 0; i < instantiatedGameObjects.size(); i++)
 	{
@@ -59,6 +70,8 @@ void Game::Render()
 		instantiatedGameObjects[i]->Render();
 		glPopMatrix();
 	}
+
+	Screen::RenderGrid();
 }
 
 void Game::Instantiate(GameObject* gameObject)

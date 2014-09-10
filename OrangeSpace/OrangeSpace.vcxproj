@@ -85,9 +85,11 @@
     <ClCompile Include="Debug.cpp" />
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="GameObject.cpp" />
+    <ClCompile Include="Input.cpp" />
     <ClCompile Include="MediumStar.cpp" />
     <ClCompile Include="Random.cpp" />
     <ClCompile Include="BigStar.cpp" />
+    <ClCompile Include="Rigidbody.cpp" />
     <ClCompile Include="SmallStar.cpp" />
     <ClCompile Include="TextureLoader.cpp" />
     <ClCompile Include="main.cpp" />
@@ -102,9 +104,11 @@
     <ClInclude Include="Debug.h" />
     <ClInclude Include="Game.h" />
     <ClInclude Include="GameObject.h" />
+    <ClInclude Include="Input.h" />
     <ClInclude Include="MediumStar.h" />
     <ClInclude Include="Random.h" />
     <ClInclude Include="BigStar.h" />
+    <ClInclude Include="Rigidbody.h" />
     <ClInclude Include="SmallStar.h" />
     <ClInclude Include="Texture.h" />
     <ClInclude Include="TextureLoader.h" />

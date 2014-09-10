@@ -12,7 +12,7 @@ void Debug::PrintOnScreen(Vector2 pos, float r, float g, float b, std::string st
 	int len, i;
 	len = (int)strlen(string.c_str());
 	for (i = 0; i < len; i++) {
-		glutBitmapCharacter(GLUT_BITMAP_HELVETICA_18, string[i]);
+		glutBitmapCharacter(GLUT_BITMAP_9_BY_15, string[i]);
 	}
 }
 
@@ -44,4 +44,14 @@ void Debug::PrintFPS()
 void Debug::Log(std::string message)
 {
 	std::cout << message << std::endl;
+}
+
+void Debug::Log(char * message)
+{
+	std::cout << message << std::endl;
+}
+
+void Debug::Log(std::stringstream message)
+{
+	Debug::Log(message.str());
 }
