@@ -1,13 +1,17 @@
 #pragma once
-#include "GameObject.h"
 #include "TextureLoader.h"
-#include "Game.h"
-class BigStar :
-	public GameObject
+#include "Texture.h"
+#include "Vector2.h"
+#include "GameSetup.h"
+class BigStar
 {
 public:
+	Texture * texture;
+	Vector2 position;
+	Vector2 scale;
+
 	BigStar();
 	~BigStar();
-	virtual void Render();
+	void Render();
 };
 

@@ -5,14 +5,16 @@
 #include "Vector2.h"
 #include "Background.h"
 #include "TextureLoader.h"
+#include "Level.h"
+
+class Level;
+
 class Game
 {
 public:
-	static std::vector<GameObject*> instantiatedGameObjects;
+	//static std::vector<GameObject*> instantiatedGameObjects;
 	static Vector2 cursorPosition;
-	static Texture * spaceshipTexture;
-	static Texture * mediumStarTexture;
-	static Texture * bigStarTexture;
+	static Level * currentLevel;
 	static float time;
 	static float deltaTime;
 	static void Init();

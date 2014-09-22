@@ -7,6 +7,10 @@
 #include "TextureLoader.h"
 //#include "TGALoader.h"
 #include "Input.h"
+#include "GameSetup.h"
+
+class GameObject;
+
 class Spaceship :
 	public GameObject
 {

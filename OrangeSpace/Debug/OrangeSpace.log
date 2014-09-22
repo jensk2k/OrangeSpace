@@ -1,23 +1,29 @@
-﻿Build started 10-09-2014 03:00:18.
+﻿Build started 22-09-2014 23:24:58.
      1>Project "D:\OrangeSpace\OrangeSpace\OrangeSpace.vcxproj" on node 2 (Build target(s)).
      1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(388,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (Asteroids.vcxproj).  This can lead to incorrect clean and rebuild behavior.
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Spaceship.cpp
-         Spaceship.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Debug.cpp
+         Debug.cpp
      1>d:\orangespace\orangespace\vector2.h(172): warning C4244: 'return' : conversion from 'double' to 'float', possible loss of data
      1>d:\orangespace\orangespace\vector2.h(176): warning C4244: 'return' : conversion from 'double' to 'float', possible loss of data
+     1>d:\orangespace\orangespace\debug.cpp(27): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>d:\orangespace\orangespace\debug.cpp(29): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
        Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\OrangeSpace\OrangeSpace\Debug\OrangeSpace.exe" /INCREMENTAL /NOLOGO opengl32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\OrangeSpace\OrangeSpace\Debug\OrangeSpace.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\OrangeSpace\OrangeSpace\Debug\OrangeSpace.lib" /MACHINE:X86 Debug\Background.obj
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\OrangeSpace\OrangeSpace\Debug\OrangeSpace.exe" /INCREMENTAL /NOLOGO opengl32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\OrangeSpace\OrangeSpace\Debug\OrangeSpace.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\OrangeSpace\OrangeSpace\Debug\OrangeSpace.lib" /MACHINE:X86 Debug\Asteroid.obj
+         Debug\Background.obj
          Debug\Component.obj
          Debug\Debug.obj
          Debug\Game.obj
          Debug\GameObject.obj
+         Debug\GameSetup.obj
          Debug\Input.obj
+         Debug\Level.obj
          Debug\MediumStar.obj
          Debug\Random.obj
          Debug\BigStar.obj
          Debug\Rigidbody.obj
          Debug\SmallStar.obj
+         Debug\StarryBackground.obj
          Debug\TextureLoader.obj
          Debug\main.obj
          Debug\Screen.obj
@@ -29,4 +35,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:00.61
+Time Elapsed 00:00:00.74

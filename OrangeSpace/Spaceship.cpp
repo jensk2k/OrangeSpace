@@ -2,7 +2,7 @@
 Spaceship::Spaceship()
 {
 
-	texture = Game::spaceshipTexture;
+	texture = GameSetup::spaceshipTexture;
 }
 
 

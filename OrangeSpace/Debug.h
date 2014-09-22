@@ -15,7 +15,7 @@ public:
 	static void PrintOnScreen(Vector2 pos, float r, float g, float b, std::string string);
 	static void PrintFPS();
 	static void Log(std::string message);
-	static void Debug::Log(char * message);
+	static void Log(char * message);
 	static void Log(std::stringstream message);
 	// FPS counter
 	//static int frame, time, timebase, fps;

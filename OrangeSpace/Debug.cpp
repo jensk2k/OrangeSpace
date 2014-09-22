@@ -36,7 +36,7 @@ void Debug::PrintFPS()
 
 	float aspectRatio = 16.0f / 9.0f; // Redundant
 
-	Vector2 screenPosition(0.85f * aspectRatio, 0.95f);
+	Vector2 screenPosition(0.8f * aspectRatio, 0.95f);
 
 	PrintOnScreen(screenPosition, 1.0f, 1.0f, 1.0f, ss.str());
 }

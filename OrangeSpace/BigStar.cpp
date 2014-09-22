@@ -3,7 +3,7 @@
 BigStar::BigStar()
 {
 	//TextureLoader::LoadTexture(texture, "Textures/StarBig.tga");
-	texture = Game::bigStarTexture;
+	texture = GameSetup::bigStarTexture;
 }
 
 

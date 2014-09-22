@@ -10,10 +10,10 @@
 #include "Vector2.h"
 #include "Debug.h"
 #include "Game.h"
+#include "GameObject.h"
 #include "Screen.h"
 #include "Input.h"
 // Global variables
-std::string title = "Orange Space";  // Windowed mode's title
 
 int refreshMillis = 30;      // Refresh period in milliseconds
 
@@ -23,12 +23,6 @@ GLdouble clipAreaXLeft, clipAreaXRight, clipAreaYBottom, clipAreaYTop;
 bool fullScreenMode = false; // Full-screen or windowed mode?
 
 bool printScreenInfo = true;
-
-/* Initialize OpenGL Graphics */
-void initGL() 
-{
-	glClearColor(0.8, 0.2, 0.0, 1.0); // Set background (clear) color to black
-}
 
 /* Callback handler for window re-paint event */
 void display() 
@@ -177,7 +171,8 @@ int main(int argc, char** argv)
 	glutInitDisplayMode(GLUT_RGBA | GLUT_DOUBLE); // Enable double buffered mode
 	glutInitWindowSize(Screen::width, Screen::height);  // Initial window width and height
 	glutInitWindowPosition(0.0f, 0.0f); // Initial window top-left corner (x, y)
-	glutCreateWindow(title.c_str());      // Create window with given title
+
+	glutCreateWindow("Project: Too Much Free Time");      // Create window with given title
 
 	glEnable(GL_BLEND);
 	glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
@@ -193,8 +188,8 @@ int main(int argc, char** argv)
 	glutPassiveMotionFunc(mouseMotion);
 	glutMotionFunc(mouseMotion);
 	glutSetCursor(GLUT_CURSOR_FULL_CROSSHAIR);
-	initGL();                     // Our own OpenGL initialization
 	Game::Init();
 	glutMainLoop();               // Enter event-processing loop
 	return 0;
 }
+

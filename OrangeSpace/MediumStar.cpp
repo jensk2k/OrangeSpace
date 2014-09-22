@@ -4,7 +4,7 @@
 MediumStar::MediumStar()
 {
 	//TextureLoader::LoadTexture(texture, "Textures/StarMedium.tga");
-	texture = Game::mediumStarTexture;
+	texture = GameSetup::mediumStarTexture;
 }
 
 

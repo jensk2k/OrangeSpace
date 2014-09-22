@@ -6,7 +6,6 @@
 #include "Vector2.h"
 #include "Component.h"
 #include "Texture.h"
-
 class GameObject
 {
 public:
@@ -22,5 +21,6 @@ public:
 	virtual void FrameUpdate();
 	virtual void FixedUpdate();
 	virtual void Render();
+	void AddComponent(Component component);
 };
 
